@@ -1,63 +1,127 @@
-# Python
-*.py[cod]
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
 *.so
 
 # Virtual environments
+.env
+.envrc
+.venv
 env/
 venv/
-.venv/
 ENV/
-.env/
-.venv.bak/
 env.bak/
+venv.bak/
+.venv.bak/
 
 # Django / SQLite databases
+db.sqlite3
+db.sqlite3-journal
 *.sqlite3
 *.db
+local_settings.py
 
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.pytest_cache/
+.hypothesis/
+cover/
+
+# Logs
+*.log
+logs/
 
 # IDE / Editor
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# macOS / Windows system files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Coverage / Test
-htmlcov/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
+*.iml
+*.ipr
+*.iws
 
 # PyInstaller
 *.manifest
 *.spec
 
-# Local configs / secrets
-.env
-.env.local
-.env.*.local
-db.sqlite3
+# MacOS / Windows system files
+.DS_Store
+Thumbs.db
 
-# Pycharm project settings
-*.iml
-*.ipr
-*.iws
+# Sphinx documentation
+docs/_build/
 
-# Migrations (optional - usually commit these if you collaborate)
-# **/migrations/
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # MyPy / Pyright / Ruff
 .mypy_cache/
+.dmypy.json
+dmypy.json
 .pytype/
-ruff_cache/
+.ruff_cache/
+.pyre/
+
+# Spyder / Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# mkdocs
+/site
+
+# Cursor AI editor
+.cursorignore
+.cursorindexingignore
+
+# PEP 582 / pixi / pdm / poetry
+__pypackages__/
+.pdm-python
+.pdm-build/
+.pixi
+#poetry.lock
+#pdm.lock
+#pixi.lock
+
+# PyCharm project settings (optional)
+#.idea/
+
+# Temporary
+*.bak
+*.tmp
