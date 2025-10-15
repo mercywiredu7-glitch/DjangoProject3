@@ -1,6 +1,3 @@
-"""
-URL configuration for DjangoProject3 project.
-"""
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
@@ -11,5 +8,7 @@ urlpatterns = [
     path('', include('Commerce.urls')),
 ]
 
+# ✅ Serve static + media files in development
 if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
